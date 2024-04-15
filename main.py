@@ -461,6 +461,11 @@ def display_mainmenu():
             time.sleep(2)
             print("-------------------------------------------------------------")
             display_mainmenu()
+    else:
+        print("We couldn't find that credit card! Make sure you typed the numbers correctly.")
+        time.sleep(2)
+        print("-------------------------------------------------------------")
+        display_mainmenu()
 
 
             
