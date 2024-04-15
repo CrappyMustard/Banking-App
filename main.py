@@ -239,7 +239,6 @@ def display_mainmenu():
     elif option == "6":
         print("See you later!")
         time.sleep(2)
-        exit
     elif option == "3":
         cursor = connection.cursor()
         cursor.execute("SELECT Balance FROM details WHERE Username = %s", (currentuser,))
@@ -375,7 +374,7 @@ def display_mainmenu():
                 print("-------------------------------------------------------------")
                 display_mainmenu()
         else:
-            print("We couldn't find that user! Make sure you typed their name correctly.")
+            print("We couldn't find that credit card! Make sure you typed the numbers correctly.")
             time.sleep(2)
             print("-------------------------------------------------------------")
             display_mainmenu()
@@ -458,7 +457,7 @@ def display_mainmenu():
                 print("-------------------------------------------------------------")
                 display_mainmenu()
         else:
-            print("We couldn't find that user! Make sure you typed their name correctly.")
+            print("We couldn't find that credit card! Make sure you typed the numbers correctly.")
             time.sleep(2)
             print("-------------------------------------------------------------")
             display_mainmenu()
